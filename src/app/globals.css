@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section1 {
+  width: 40%;
+  height: 100vh;
+}
+.section2 {
+  width: 60%;
+  height: 100vh;
+}
+.error-msg {
+  color: red;
+}
+.text-input {
+  /* background-color: #f5f5f5;
+  border-radius: 12px;
+  border:1px solid #000000;
+  width:100%; */
+}
+.redirectLink a {
+  text-decoration: underline;
+}
+.social-login-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.social-login-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  cursor: pointer;
+}
+.selection-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-signup {
+  width: 50%;
+  height: 40vh;
+}
+.indivisual-signup {
+  width: 50%;
+  height: 40vh;
+}
+.selected {
+  background-color: aliceblue;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
